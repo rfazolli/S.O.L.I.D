@@ -1,3 +1,6 @@
-enum TypeVehicle { CAR, MOTORCYCLE };
+enum TypeVehicle {
+  CAR,
+  MOTORCYCLE,
+}
 
-export default TypeVehicle 
+export default TypeVehicle;

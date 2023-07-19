@@ -1,19 +1,21 @@
-import IVehicleCar from "./IVehicleCar";
+import Vehicle from "./Vehicle";
 
-export default class Car implements IVehicleCar {
+export default class Car extends Vehicle {
+  constructor(
+    private color: string,
+    private year: number,
+    private engine: number,
+    private seats: number,
+    private doors: number
+  ) {
+    super();
+  }
 
-    constructor(color: string, year: number, engine: number, seats: number, doors: number) {
-        this.configure(color, year, engine, seats, doors);
-    }
+  startVehicle(): void {
+    console.log(
+      `Criando um carro: ${this.color}, ${this.year}, ${this.engine} potência, ${this.doors} portas com ${this.seats} assentos`
+    );
 
-    startVehicle(): void {
-        console.log('Ligando os motores.')
-    }
-
-    configure(color: string, year: number, engine: number, seats: number, doors: number): void {
-        console.log(`Criando um carro: ${color}, ${year}, ${engine} potência, ${doors} portas com ${seats} assentos`);
-
-        this.startVehicle();
-    }
-
+    console.log("Ligando os motores.");
+  }
 }
