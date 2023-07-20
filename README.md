@@ -1,9 +1,13 @@
 # S.O.L.I.D
 
-1 - S — Single Responsiblity Principle - SRP
+1 - S — Single Responsibility Principle - SRP
 
-Exemplo de responsabilidade única, onde a classe Client chama a classe Notify, separando e abstraindo responsabilidades. 
+Exemplo de Single Responsibility Principle.
 
 2 - O — Open/Closed Principle - OCP
 
 Exemplo de Open/Closed.
+
+3 - L — Liskov Substitution Principle - LSP
+
+Exemplo de Liskov Substitution Principle
